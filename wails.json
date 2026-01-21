@@ -1,0 +1,34 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "vtgui",
+  "outputfilename": "vtgui",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Revellison",
+    "email": "revellison@internet.ru"
+  },
+  "windows": [
+    {
+      "title": "VT Express Analysis",
+      "width": 1100,
+      "height": 800,
+      "minWidth": 900,
+      "minHeight": 600,
+      "fullscreen": false,
+      "frameless": true,
+      "WebviewIsTransparent": true,
+      "WindowStartState": "normal",
+      "DisableResize": false,
+      "Theme": "windows.Dark",
+      "CustomTheme": {
+        "titleBarBgColor": "#00000000",
+        "titleBarFgColor": "#ffffff",
+        "webviewBgColor": "#00000000"
+      },
+      "BackdropType": "mica"
+    }
+  ]
+}
