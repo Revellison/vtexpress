@@ -1,0 +1,67 @@
+@keyframes scalein {
+    from {
+        transform: scale(0.97);
+        background-color: #5e5e5e;
+    }
+    to {
+        transform: scale(1);
+        background-color: #333333;
+    }
+}
+
+@keyframes scaleinsvg {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.sidebar {
+    min-height: 100%;
+    padding: 20px 10px 20px 10px;
+    border-right: 1px solid #333333;
+    & .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        font-size: 1.1em;
+        & .navtop, & .navbottom {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            & a {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                padding: 10px 15px;
+                width: 120px;
+                background-color: transparent;
+                transition: all 0.2s ease;
+                border-radius: 12px;
+                text-align: left;
+                 & svg {
+                    width: 26px;
+                    height: 26px;        
+                }
+                 &:hover {
+                    background-color: #333333;
+                }
+                 &.active {
+                    background-color: #333333;
+                    animation: scalein 0.3s ease;
+                     & svg {
+                        animation: scaleinsvg 0.3s ease;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,65 @@
+html {
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: "Rubik", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 900;
+    src: url("assets/fonts/Rubik-Black.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("assets/fonts/Rubik-ExtraBold.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 600;
+    src: url("assets/fonts/Rubik-SemiBold.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    src: url("assets/fonts/Rubik-Medium.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Rubik-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+    url("assets/fonts/nunito-v16-latin-regular.woff2") format("woff2");
+}
+
+
+
+
