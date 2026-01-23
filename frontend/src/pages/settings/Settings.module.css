@@ -1,0 +1,65 @@
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.96);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.settings {
+    animation: scaleIn 0.4s ease forwards;
+    padding: 20px;
+    user-select: none;
+    @media screen and (min-width: 800px) {}
+    & .apiSection {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: linear-gradient(-45deg, #ee7652d2, #e73c7ea9, #23a5d5a4, #23d5abb0);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+        border-radius: 10px;
+        padding: 20px;
+         & input {
+            width: 350px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.616);
+            backdrop-filter: blur(30px);
+            color: var(--color-black);
+            transition: all 0.3s ease;
+            outline: none;
+            font-weight: 500;
+            font-size: 1em;
+            font-family: 'Rubik', sans-serif;
+            margin-right: 7px;
+            @media screen and (min-width: 870px) {width: 480px;}
+         }
+          & .vtApiContainer, .aiApiContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+             & .vtApiContainerTop, .vtApiContainerBottom, .aiApiContainerTop, .aiApiContainerBottom {
+                display: flex;
+                flex-direction: row;
+                 & button {
+                    min-height: 100%;
+                    width: 40px;
+                    border: none;
+                    background-color: rgba(255, 255, 255, 0.493);
+                }
+            }
+        }
+    }
+}
+

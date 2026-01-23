@@ -1,0 +1,59 @@
+@keyframes scaleIn {
+    from {
+        transform: scale(0.96);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.history {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: scaleIn 0.4s ease forwards;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-size: 20px;
+  color: #e3e3e3;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #9a9a9a;
+  margin: 0;
+}
+
+.listPlaceholder {
+  margin-top: 12px;
+}
+
+.card {
+  border: 1px dashed #3a3a3a;
+  background: rgba(255,255,255,0.02);
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 520px;
+}
+
+.cardTitle {
+  font-weight: 600;
+  color: #cfcfcf;
+  margin-bottom: 6px;
+}
+
+.cardText {
+  color: #9a9a9a;
+  font-size: 13px;
+}
