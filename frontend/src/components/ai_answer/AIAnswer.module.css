@@ -1,0 +1,18 @@
+.wrapper {
+  margin-top: 12px;
+  border: 1px solid #3b3b3b;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.wrapper h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.wrapper p {
+  margin: 0;
+  color: #cccccc;
+  white-space: pre-wrap;
+  font-size: 13px;
+}

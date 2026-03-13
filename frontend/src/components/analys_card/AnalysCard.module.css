@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.row {
+  font-size: 12px;
+  color: #dddddd;
+  word-break: break-word;
+}

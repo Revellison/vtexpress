@@ -52,6 +52,7 @@
              & .vtApiContainerTop, .vtApiContainerBottom, .aiApiContainerTop, .aiApiContainerBottom {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
                  & button {
                     min-height: 100%;
                     width: 40px;
@@ -59,6 +60,31 @@
                     background-color: rgba(255, 255, 255, 0.493);
                 }
             }
+        }
+
+        & .select {
+            width: 350px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.616);
+            color: var(--color-black);
+            font-family: 'Rubik', sans-serif;
+            @media screen and (min-width: 870px) {width: 480px;}
+        }
+
+        & .checkboxRow {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95em;
+        }
+
+        & .status {
+            min-height: 20px;
+            font-size: 0.9em;
+            color: #f0f0f0;
         }
     }
 }
